@@ -3,6 +3,6 @@ fifa-front:
   container: m96ru/fifa-front
   image: m96ru/fifa-front
   ports:
-  - ip: fifa
+  - ip: fifa.deliverous.com
     container_port: 80
     host_port: 80
