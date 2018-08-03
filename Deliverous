@@ -1,6 +1,7 @@
 fifa-front:
   description: Fifa Front
   container: m96ru/fifa-front
+  image: m96ru/fifa-front
   ports:
   - ip: fifa
     container_port: 80
