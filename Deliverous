@@ -1,7 +1,7 @@
 fifa-front:
   description: Fifa Front
   container: m96ru/fifa-front
-  image: m96ru/fifa-front
+  image: nginx
   ports:
   - ip: fifa.deliverous.com
     container_port: 80
