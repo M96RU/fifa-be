@@ -9,7 +9,7 @@ fifa-front:
   ports:
   - ip: fifa.deliverous.com
     container_port: 4200
-	host_port: 80
+    host_port: 80
 
 fifa-api:
   description: Fifa Midle
@@ -29,7 +29,7 @@ fifa-api:
   ports:
   - ip: fifa.deliverous.com
     container_port: 4200
-	host_port: 80
+    host_port: 80
 
 fifa-db:
   description: Fifa BDD
