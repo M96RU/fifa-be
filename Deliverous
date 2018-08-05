@@ -16,12 +16,12 @@ fifa-api:
   container: m96ru/wl-football-league-api
   image: m96ru/wl-football-league-api
   environment:
-	EXPORT DB_DRIVER=com.mysql.jdbc.Driver
-	DB_URL=jdbc:mysql://fifadb:3306/wlceligue?autoReconnect=true&useSSL=false
-	DB_USER=root
-	DB_PW=root
-	MAIL_HOST=172.0.0.1
-	SITE_URL=http://5.135.124.161
+    EXPORT DB_DRIVER=com.mysql.jdbc.Driver
+    DB_URL=jdbc:mysql://fifadb:3306/wlceligue?autoReconnect=true&useSSL=false
+    DB_USER=root
+    DB_PW=root
+    MAIL_HOST=172.0.0.1
+    SITE_URL=http://5.135.124.161
   hostname: fifaapi
   links:
   - name: fifa-db
@@ -37,4 +37,4 @@ fifa-db:
   image: mysql:5.7
   hostname: fifadb
   environment:
-	MYSQL_ROOT_PASSWORD: root
+    MYSQL_ROOT_PASSWORD: root
