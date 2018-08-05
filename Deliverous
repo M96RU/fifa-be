@@ -1,15 +1,5 @@
 fifa-front:
   description: Fifa Front
-  container: m96ru/fifa-front
-  image: m96ru/wl-football-league-webapp
-  ports:
-  - ip: fifa.deliverous.com
-    container_port: 4200
-    host_port: 80
-
-	
-fifa-front:
-  description: Fifa Front
   container: m96ru/wl-football-league-webapp
   image: m96ru/wl-football-league-webapp
   hostname: fifafront
