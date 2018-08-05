@@ -28,8 +28,8 @@ fifa-api:
     alias: fifadb
   ports:
   - ip: fifa.deliverous.com
-    container_port: 4200
-    host_port: 80
+    container_port: 8080
+    host_port: 8080
 
 fifa-db:
   description: Fifa BDD
@@ -38,3 +38,7 @@ fifa-db:
   hostname: fifadb
   environment:
     MYSQL_ROOT_PASSWORD: root
+  ports:
+  - ip: fifa.deliverous.com
+    container_port: 3306
+    host_port: 3306
