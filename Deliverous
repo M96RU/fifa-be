@@ -17,7 +17,8 @@ fifa-api:
   image: m96ru/wl-football-league-api
   environment:
     DB_DRIVER: com.mysql.jdbc.Driver
-    DB_URL: "jdbc:mysql://fifadb:3306/wlceligue?autoReconnect=true&useSSL=false"
+    DB_URL: "jdbc:mysql://fifadb:3306/wlceligue?autoReconnect=true"
+    DB_URL_BAK: "jdbc:mysql://fifadb:3306/wlceligue?autoReconnect=true&useSSL=false"
     DB_USER: root
     DB_PW: root
     MAIL_HOST: 172.0.0.1
