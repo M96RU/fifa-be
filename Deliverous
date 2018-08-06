@@ -27,8 +27,6 @@ fifa-api:
   links:
   - name: fifa-db
     alias: fifadb
-  ports:
-  - container_port: 8080
 
 fifa-db:
   description: Fifa BDD
@@ -37,5 +35,3 @@ fifa-db:
   hostname: fifadb
   environment:
     MYSQL_ROOT_PASSWORD: root
-  ports:
-  - container_port: 3306
