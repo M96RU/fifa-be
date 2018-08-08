@@ -35,3 +35,19 @@ fifadb:
   volumes:
   - name: fifadb
     path: /var/lib/mysql
+    
+fifaphpmyadmin:
+  description: Fifa Midle
+  container: phpmyadmin/phpmyadmin
+  image: phpmyadmin/phpmyadmin
+  environment:
+    PMA_HOST: fifadb
+    PMA_USER: root
+    PMA_PASSWORD: root
+  links:
+  - name: fifadb
+    alias: fifadb
+  ports:
+  - ip: fifa.deliverous.com
+    container_port: 80
+    host_port: 81
