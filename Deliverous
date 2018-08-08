@@ -56,3 +56,6 @@ fifasmtp:
   description: Fifa SMTP
   container: namshi/smtp
   image: namshi/smtp
+  environment:
+    GMAIL_USER: {{ .gmailuser }}
+    GMAIL_PASSWORD: {{ .gmailpassword }}
