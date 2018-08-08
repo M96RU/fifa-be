@@ -21,7 +21,7 @@ fifaapi:
     DB_USER: root
     DB_PW: root
     MAIL_HOST: 172.0.0.1
-    SITE_URL: http://5.135.124.161
+    SITE_URL: http://91.121.239.214
   links:
   - name: fifadb
     alias: fifadb
