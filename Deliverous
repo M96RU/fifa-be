@@ -42,8 +42,6 @@ fifaphpmyadmin:
   image: phpmyadmin/phpmyadmin
   environment:
     PMA_HOST: fifadb
-    PMA_USER: root
-    PMA_PASSWORD: root
   links:
   - name: fifadb
     alias: fifadb
