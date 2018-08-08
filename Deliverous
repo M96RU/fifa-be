@@ -1,16 +1,16 @@
-fifa-front:
+fifafront:
   description: Fifa Front
   container: m96ru/wl-football-league-webapp
   image: m96ru/wl-football-league-webapp
   links:
-  - name: fifa-api
+  - name: fifaapi
     alias: fifaapi
   ports:
   - ip: fifa.deliverous.com
     container_port: 4200
     host_port: 80
 
-fifa-api:
+fifaapi:
   description: Fifa Midle
   container: m96ru/wl-football-league-api
   image: m96ru/wl-football-league-api
@@ -23,10 +23,10 @@ fifa-api:
     MAIL_HOST: 172.0.0.1
     SITE_URL: http://5.135.124.161
   links:
-  - name: fifa-db
+  - name: fifadb
     alias: fifadb
 
-fifa-db:
+fifadb:
   description: Fifa BDD
   container: mysql:5.7
   image: mysql:5.7
