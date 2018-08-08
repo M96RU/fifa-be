@@ -33,5 +33,5 @@ fifadb:
   environment:
     MYSQL_ROOT_PASSWORD: root
   volumes:
-  - name: fifadatabase
+  - name: fifadb
     path: /var/lib/mysql
