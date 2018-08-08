@@ -20,11 +20,13 @@ fifaapi:
     DB_URL_BAK: "jdbc:mysql://fifadb:3306/wlceligue?autoReconnect=true&useSSL=false"
     DB_USER: root
     DB_PW: root
-    MAIL_HOST: 172.0.0.1
+    MAIL_HOST: fifasmtp
     SITE_URL: http://91.121.239.214
   links:
   - name: fifadb
     alias: fifadb
+  - name: fifasmtp
+    alias: fifasmtp
 
 fifadb:
   description: Fifa BDD
@@ -49,3 +51,8 @@ fifaphpmyadmin:
   - ip: fifa.deliverous.com
     container_port: 80
     host_port: 81
+
+fifasmtp:
+  description: Fifa SMTP
+  container: namshi/smtp
+  image: namshi/smtp
